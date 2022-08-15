@@ -1,6 +1,6 @@
 # URL_Shortener_Web_Application
 
-# What will our Web app do (Objectives)?
+# What will this Web app do (Objectives)?
 As the name suggests, it shortens URLs.
 Users can also save URLS by coming to the web app.
 
