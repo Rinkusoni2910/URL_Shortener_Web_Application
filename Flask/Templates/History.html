@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+
+{% block title_block %}    
+    History
+{% endblock %}
+
+{% block body_block %}    
+
+<body style="text-align: center;background-color: white"> 
+<style>
+        table {
+          border-collapse: collapse;
+          width: 50%;
+        }
+        
+        th,td {
+          text-align: left;
+          padding: 50px;
+          border-style: groove;
+        }
+        
+        tr:nth-child(odd) {
+          background-color: white;
+        }
+</style>
+<table class="table table-hover table-dark table-fixed" style="background-color:lightblue">
+    <tr>
+        <Br><br>
+        <th><b>ID</b></th>
+        <th><b>LONG URL</b></th>
+        <th><b>SHORT URL</b></th>
+    </tr>
+    <tbody id="forbar">
+   {% for ele in li %}
+    <tr>
+        <td>{{ele.id}}</td>
+        <td>{{ele.long_url}}</td>
+        <td>{{ele.short_url}}</td>
+    </tr>
+    {% endfor %}
+</body>
+{% endblock %}
